@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D79294EB-7EC3-4F67-B152-7B49B5510CE3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/RevCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "RevCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - 4b431265aa203059"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.bookTitle.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - ad50aed0721e6c55"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.bookTitle.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - b6dcbde027e26ea4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.bookTitle.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - e54916a88fcfa755"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.bookTitle.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - 823b450eb26f8cf7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TLDR.RevCell"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "AF290879-CC55-4916-A7CD-1AB3CA6A5A49 - 7b45829f646eb8bf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.RevCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TLDR.RevCell&gt;"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minh/Desktop/Mobile%20App%20Development/project-3-MLKhan22/Project3Sample/RevCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

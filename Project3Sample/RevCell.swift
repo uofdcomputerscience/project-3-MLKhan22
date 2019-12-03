@@ -10,6 +10,7 @@ import UIKit
 
 class RevCell: UITableViewCell {
     @IBOutlet weak var bookTitle: UILabel!
+    @IBOutlet weak var revTitle: UILabel!
     @IBOutlet weak var reviewer: UILabel!
     @IBOutlet weak var reviewDate: UILabel!
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class ReviewListViewController: UIViewController, UITableViewDelegate {
     
+    var selectedBook = "Book: "
     var selectedTitle = "Title: "
     var selectedReviewer = "Reviewer: "
     var selectedDate = "On: "
@@ -18,6 +19,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
     let formatter = DateFormatter()
     
     let reviewService = ReviewService.shared
+    let bookService = BookService.shared
     @IBOutlet weak var tableViewer: UITableView!
     @IBOutlet weak var refreshReviews: UIButton!
 
@@ -27,12 +29,17 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
         self.tableViewer.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         self.tableViewer.dataSource = self
         self.tableViewer.delegate = self
-        fetchReviews()
+        fetchReviewsAndBooks()
         formatter.dateFormat = "MMM d, yyyy"
     }
     
-    func fetchReviews() {
+    func fetchReviewsAndBooks() {
         reviewService.fetchReviews { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableViewer.reloadData()
+            }
+        }
+        bookService.fetchBooks { [weak self] in
             DispatchQueue.main.async {
                 self?.tableViewer.reloadData()
             }
@@ -40,11 +47,12 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
     }
     
     @IBAction func refreshReviewsTapped(_ sender: UIButton) {
-        fetchReviews()
+        fetchReviewsAndBooks()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let review = reviewService.reviews[indexPath.item]
+        selectedBook = "Book: " + bookService.books[review.bookId].title
         selectedTitle = "Title: " + review.title
         selectedReviewer = "Reviewer: " + review.reviewer
         selectedBody = ""+review.body
@@ -60,7 +68,8 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "reviewModal" {
             if let review = segue.destination as? ReviewDetailViewController {
-                review.selectedTitle = selectedTitle
+                review.selectedBTitle = selectedBook
+                review.selectedRTitle = selectedTitle
                 review.selectedReviewer = selectedReviewer
                 review.selectedDate = selectedDate
                 review.selectedBody = selectedBody
@@ -81,7 +90,8 @@ extension ReviewListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RevCell", for: indexPath)
         if let rCell = cell as? RevCell{
             let review = reviewService.reviews[indexPath.item]
-            rCell.bookTitle.text = "Title: "+review.title
+            rCell.bookTitle.text = "Book: "+bookService.books[review.bookId].title
+            rCell.revTitle.text = "Title: "+review.title
             rCell.reviewer.text = "Reviewer: "+review.reviewer
             if(review.date != nil) {
                 rCell.reviewDate.text = "On: "+formatter.string(from: review.date!)

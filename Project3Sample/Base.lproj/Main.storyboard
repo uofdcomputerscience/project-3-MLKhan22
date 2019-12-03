@@ -178,7 +178,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nRS-Ad-LA3">
-                                                    <rect key="frame" x="20" y="30" width="184.5" height="57"/>
+                                                    <rect key="frame" x="20" y="1.5" width="184.5" height="85.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ert-gf-Qup">
                                                             <rect key="frame" x="0.0" y="0.0" width="44" height="20.5"/>
@@ -186,14 +186,20 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-vN-p6u">
+                                                            <rect key="frame" x="0.0" y="28.5" width="42.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviewer: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-4d-SL6">
-                                                            <rect key="frame" x="0.0" y="28.5" width="184.5" height="0.0"/>
+                                                            <rect key="frame" x="0.0" y="57" width="184.5" height="0.0"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdq-20-58a">
-                                                            <rect key="frame" x="0.0" y="36.5" width="27" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="65" width="27" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -210,6 +216,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bookTitle" destination="ert-gf-Qup" id="CcR-Nc-ZEW"/>
+                                            <outlet property="revTitle" destination="GbI-vN-p6u" id="jRM-n6-8Ue"/>
                                             <outlet property="reviewDate" destination="qdq-20-58a" id="NWv-qS-kRI"/>
                                             <outlet property="reviewer" destination="1ym-4d-SL6" id="nih-1f-K2C"/>
                                         </connections>
@@ -259,7 +266,7 @@
                                 <rect key="frame" x="50" y="59" width="314" height="699"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l2L-5e-c9v">
-                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="106"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVP-40-rKE">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="20.5"/>
@@ -267,14 +274,20 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anw-Ky-3zh">
+                                                <rect key="frame" x="0.0" y="28.5" width="42.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviewer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewh-NZ-okH">
-                                                <rect key="frame" x="0.0" y="28.5" width="74.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="57" width="74.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-fZ-ZQy">
-                                                <rect key="frame" x="0.0" y="57" width="27" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="85.5" width="27" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -282,7 +295,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ie-uy-hd8">
-                                        <rect key="frame" x="0.0" y="133.5" width="240" height="565.5"/>
+                                        <rect key="frame" x="0.0" y="162" width="240" height="537"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -310,6 +323,7 @@
                         <outlet property="bookReviewer" destination="ewh-NZ-okH" id="9mv-6f-LRn"/>
                         <outlet property="bookTitle" destination="OVP-40-rKE" id="pI8-fI-my4"/>
                         <outlet property="dateReviewed" destination="sHL-fZ-ZQy" id="I6D-VT-Uib"/>
+                        <outlet property="revTitle" destination="Anw-Ky-3zh" id="vfk-Xj-6bH"/>
                         <outlet property="reviewBody" destination="5Ie-uy-hd8" id="t6L-TE-Q1o"/>
                     </connections>
                 </viewController>
