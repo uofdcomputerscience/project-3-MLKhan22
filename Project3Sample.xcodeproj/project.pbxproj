@@ -21,7 +21,9 @@
 		4670DA9423809A4700487601 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9323809A4700487601 /* Review.swift */; };
 		4670DA9623809A5000487601 /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9523809A5000487601 /* BookService.swift */; };
 		4670DA9823809A5900487601 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9723809A5900487601 /* ReviewService.swift */; };
-		4670DA9A2380A28200487601 /* DataTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA992380A28200487601 /* DataTestViewController.swift */; };
+		BA7636972394766E00228D31 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7636962394766E00228D31 /* CollectionViewCell.swift */; };
+		BA7636992394AD9E00228D31 /* RevCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7636982394AD9E00228D31 /* RevCell.swift */; };
+		BA76369B23969CB700228D31 /* BookRevCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76369A23969CB700228D31 /* BookRevCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +43,9 @@
 		4670DA9323809A4700487601 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		4670DA9523809A5000487601 /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		4670DA9723809A5900487601 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
-		4670DA992380A28200487601 /* DataTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestViewController.swift; sourceTree = "<group>"; };
+		BA7636962394766E00228D31 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BA7636982394AD9E00228D31 /* RevCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevCell.swift; sourceTree = "<group>"; };
+		BA76369A23969CB700228D31 /* BookRevCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRevCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,16 +84,18 @@
 				4670DA7C238099C000487601 /* LaunchScreen.storyboard */,
 				4670DA7F238099C000487601 /* Info.plist */,
 				4670DA85238099DC00487601 /* BookListViewController.swift */,
+				BA7636962394766E00228D31 /* CollectionViewCell.swift */,
+				BA7636982394AD9E00228D31 /* RevCell.swift */,
+				BA76369A23969CB700228D31 /* BookRevCell.swift */,
 				4670DA87238099F800487601 /* BookDetailViewController.swift */,
 				4670DA8923809A0500487601 /* BookInputViewController.swift */,
-				4670DA8B23809A1C00487601 /* ReviewListViewController.swift */,
 				4670DA8D23809A2800487601 /* ReviewDetailViewController.swift */,
 				4670DA8F23809A3300487601 /* ReviewInputViewController.swift */,
+				4670DA8B23809A1C00487601 /* ReviewListViewController.swift */,
 				4670DA9123809A3A00487601 /* Book.swift */,
 				4670DA9323809A4700487601 /* Review.swift */,
 				4670DA9523809A5000487601 /* BookService.swift */,
 				4670DA9723809A5900487601 /* ReviewService.swift */,
-				4670DA992380A28200487601 /* DataTestViewController.swift */,
 			);
 			path = Project3Sample;
 			sourceTree = "<group>";
@@ -169,13 +175,15 @@
 				4670DA8C23809A1C00487601 /* ReviewListViewController.swift in Sources */,
 				4670DA86238099DC00487601 /* BookListViewController.swift in Sources */,
 				4670DA72238099BC00487601 /* AppDelegate.swift in Sources */,
-				4670DA9A2380A28200487601 /* DataTestViewController.swift in Sources */,
+				BA7636992394AD9E00228D31 /* RevCell.swift in Sources */,
 				4670DA8A23809A0600487601 /* BookInputViewController.swift in Sources */,
 				4670DA9423809A4700487601 /* Review.swift in Sources */,
 				4670DA9023809A3300487601 /* ReviewInputViewController.swift in Sources */,
+				BA7636972394766E00228D31 /* CollectionViewCell.swift in Sources */,
 				4670DA9623809A5000487601 /* BookService.swift in Sources */,
 				4670DA8E23809A2800487601 /* ReviewDetailViewController.swift in Sources */,
 				4670DA9223809A3A00487601 /* Book.swift in Sources */,
+				BA76369B23969CB700228D31 /* BookRevCell.swift in Sources */,
 				4670DA88238099F800487601 /* BookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,6 @@
 //  Created by Russell Mirabelli on 11/16/19.
 //  Copyright © 2019 Russell Mirabelli. All rights reserved.
 //
-
 import UIKit
 
 class BookService {
@@ -47,8 +46,10 @@ class BookService {
         let task = URLSession(configuration: .default).dataTask(with: imageURL) { [weak self] (data, response, error) in
             guard let data = data else { completion(book, nil); return }
             if let image = UIImage(data: data) {
-                self?.bookImages[imageURL] = image
-                completion(book, image)
+                DispatchQueue.main.async {
+                    self?.bookImages[imageURL] = image
+                    completion(book, image)
+                }
             } else {
                 completion(book, nil)
             }
