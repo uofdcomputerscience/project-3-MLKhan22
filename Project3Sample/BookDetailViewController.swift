@@ -42,7 +42,6 @@ class BookDetailViewController: UIViewController, UITableViewDelegate {
         bookPublished.text = selectedPublishYear
         img.image = selectedImage
         reviewBody.text = ""
-        //print(selectedID)
         self.tableViewer.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         self.tableViewer.dataSource = self
         self.tableViewer.delegate = self
@@ -82,7 +81,6 @@ class BookDetailViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let review = indReviews[indexPath.item]
-        //print(review.body)
         selectedReviewer = "Reviewer: " + review.reviewer
         reviewBody.text = ""+review.body
         if(review.date != nil) {
@@ -96,7 +94,6 @@ class BookDetailViewController: UIViewController, UITableViewDelegate {
 
 extension BookDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print(indReviews.count)
         return indReviews.count
     }
     
@@ -113,7 +110,6 @@ extension BookDetailViewController: UITableViewDataSource {
             else {
                 rCell.reviewDate.text = "On: Unknown Date"
             }
-            //print(rCell.reviewBody.text)
         }
         
         return cell

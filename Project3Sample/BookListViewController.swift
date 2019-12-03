@@ -26,7 +26,6 @@ class BookListViewController: UIViewController, UICollectionViewDelegate {
         self.collectionViewer.dataSource = self
         fetchBooks()
         collectionViewer.delegate = self
-        //print(bookService.books.count)
     }
     
     @IBAction func refreshBooksTapped(_ sender: UIButton) {
